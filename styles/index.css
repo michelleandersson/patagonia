@@ -29,6 +29,11 @@ nav {
     margin-right: 20%;
   }
 }
+@media screen and (max-width: 320px) {
+  .logo {
+    margin-right: 10%;
+  }
+}
 
 .logo__title {
   font-size: 24px;
@@ -70,7 +75,14 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+}
+@media screen and (max-width: 320px) {
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .info__title {
@@ -80,6 +92,18 @@ nav {
   font-weight: 500;
   line-height: 1.1;
 }
+@media screen and (max-width: 768px) {
+  .info__title {
+    font-size: 72px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .info__title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
 
 .info__text {
   margin-top: 30px;
@@ -88,18 +112,30 @@ nav {
   line-height: 1.5;
   color: #242635;
   text-align: center;
-  position: relative;
+}
+@media screen and (max-width: 320px) {
+  .info__text {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .image {
   width: 864px;
   margin-left: 10px;
-  overflow: hidden;
-  position: absolute;
-  top: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-right: 10px;
 }
 @media screen and (max-width: 813px) {
   .image {
     width: 700px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .image {
+    margin-left: 50px;
   }
 }
