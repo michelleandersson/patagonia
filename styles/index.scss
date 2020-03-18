@@ -25,7 +25,11 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: 34%;
+    margin-left: 10px;
     position: relative;
+    @media screen and (max-width: 813px) {
+        margin-right: 20%;
+    }
 }
 
 .logo__title {
@@ -68,6 +72,7 @@ nav {
     justify-content: center;
     align-items: center; 
     flex-direction: column;
+    position: relative;
 }
 
 .info__title {
@@ -85,4 +90,16 @@ nav {
     line-height: 1.5;
     color: $main-color;
     text-align: center;
+    position: relative;
+}
+
+.image {
+    width: 864px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 16em;
+    @media screen and (max-width: 813px){
+        width: 700px;
+    }
 }
