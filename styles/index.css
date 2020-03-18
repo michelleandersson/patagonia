@@ -8,14 +8,34 @@ body {
   flex-direction: column;
 }
 
+nav {
+  width: 1440px;
+  margin-top: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 34%;
+  position: relative;
+}
+
+.logo__title {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #242635;
+  line-height: 1.5;
+}
+
 .nav {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   overflow: hidden;
-  width: 1440px;
-  margin-top: 70px;
-  margin-right: 50px;
 }
 
 .nav__list {
