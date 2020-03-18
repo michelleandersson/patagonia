@@ -1,2 +1,68 @@
 $title-font: 'Poppins', sans-serif;
 $text-font: 'Source Sans Pro', sans-serif;
+$main-color: #242635; 
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 1440px;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+
+.nav__list {
+    display: inline-flex;
+}
+
+.nav__link {
+    list-style: none;
+    &>a {
+        color: $main-color;
+        text-decoration: none;
+        font-family: $text-font;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-left: 28px;
+        &:hover {
+            color: white;
+            background-color: $main-color;
+        }
+    }
+}
+
+.info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.info__title {
+    text-align: center;
+    font-size: 90px;
+    font-family: $title-font;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.info__text {
+    margin-top: 30px; 
+    font-size: 22px;
+    font-family: $text-font;
+    line-height: 1.5;
+    color: $main-color;
+    text-align: center;
+}
