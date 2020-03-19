@@ -79,11 +79,11 @@ body {
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    @media screen and (max-width:320px) {
+    @media screen and (max-width:370px) {
         display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
     }
 }
 
@@ -97,7 +97,7 @@ body {
         font-size: 72px;
         text-align: center;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 370px) {
         font-size: 36px;
         text-align: center;
     }
@@ -110,7 +110,10 @@ body {
     line-height: 1.5;
     color: $main-color;
     text-align: center;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width:560px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 400px) {
         font-size: 12px;
         text-align: center;
     }
@@ -127,7 +130,7 @@ body {
     @media screen and (max-width: 813px){
         width: 700px;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 370px) {
         margin-left: 50px;
     }
 }

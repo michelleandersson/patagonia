@@ -83,7 +83,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
   .info {
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
   .info__title {
     font-size: 36px;
     text-align: center;
@@ -120,7 +120,12 @@ body {
   color: #242635;
   text-align: center;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 560px) {
+  .info__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
   .info__text {
     font-size: 12px;
     text-align: center;
@@ -141,7 +146,7 @@ body {
     width: 700px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
   .image {
     margin-left: 50px;
   }
