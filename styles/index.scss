@@ -12,60 +12,64 @@ body {
     flex-direction: column;
 }
 
-nav {
-    width: 1440px;
+.topnav {
+    overflow: hidden;
     margin-top: 70px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 34%;
-    margin-left: 10px;
-    position: relative;
-    @media screen and (max-width: 813px) {
-        margin-right: 20%;
-    }
-    @media screen and (max-width: 320px) {
-        margin-right: 10%;
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: $main-color;
+    font-family: $text-font;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    &:hover {
+        color: white;
+        background-color: $main-color;  
     }
 }
-
-.logo__title {
+  
+.topnav a.active {
     font-size: 24px;
     font-family: $title-font;
     color: $main-color;
-    line-height: 1.5;
+    &:hover {
+        background: none;
+    }
+    @media screen and (max-width: 370px) {
+        padding-right: 50px;
+    }
 }
-
-.nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    overflow: hidden;
+  
+.topnav .icon {
+    display: none;
 }
-
-.nav__list {
-    display: inline-flex;
-}
-
-.nav__link {
-    list-style: none;
-    &>a {
+  
+@media screen and (max-width: 370px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        background-color: white;
         color: $main-color;
-        text-decoration: none;
-        font-family: $text-font;
-        font-size: 16px;
-        line-height: 1.4;
-        margin-left: 28px;
-        &:hover {
-            color: white;
-            background-color: $main-color;
-        }
+    }
+}
+  
+@media screen and (max-width: 370px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
