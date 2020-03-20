@@ -101,6 +101,8 @@ main {
     display: flex;
     justify-content: center;
     padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 section {
